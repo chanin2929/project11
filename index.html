@@ -1,0 +1,391 @@
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Web Master - สร้างเว็บระดับมืออาชีพใน 7 วัน ด้วย AI</title>
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+theme: {
+extend: {
+fontFamily: {
+sarabun: ['Sarabun', 'sans-serif']
+},
+colors: {
+primary: '#1e3a8a',
+gold: '#f59e0b'
+}
+}
+}
+}
+</script>
+
+<style>
+html{
+scroll-behavior:smooth;
+}
+body{
+font-family:'Sarabun',sans-serif;
+}
+.hero-bg{
+background:
+linear-gradient(rgba(30,58,138,.92),rgba(30,58,138,.92)),
+url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80');
+background-size:cover;
+background-position:center;
+}
+</style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md shadow-md z-50">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex justify-between items-center h-20">
+
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary text-white flex items-center justify-center font-bold">
+AI
+</div>
+<span class="font-bold text-xl text-primary">AI Web Master</span>
+</div>
+
+<div class="hidden md:flex gap-8 font-medium">
+<a href="#course" class="hover:text-primary transition">คอร์สเรียน</a>
+<a href="#review" class="hover:text-primary transition">รีวิว</a>
+<a href="#pricing" class="hover:text-primary transition">ราคา</a>
+<a href="#faq" class="hover:text-primary transition">FAQ</a>
+</div>
+
+<a href="#pricing"
+class="bg-gradient-to-r from-primary to-gold text-white px-6 py-3 rounded-full font-bold hover:scale-105 transition duration-300 shadow-lg">
+สมัครเลย
+</a>
+
+</div>
+</div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero-bg pt-36 pb-24 text-white">
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+
+<div>
+<span class="bg-gold text-white px-4 py-2 rounded-full text-sm font-semibold">
+🔥 คอร์สยอดนิยมสำหรับผู้เริ่มต้น
+</span>
+
+<h1 class="text-4xl md:text-6xl font-extrabold mt-6 leading-tight">
+สร้างเว็บระดับมืออาชีพ
+<br>
+ใน 7 วัน ด้วย AI
+</h1>
+
+<p class="mt-6 text-xl text-blue-100 leading-relaxed">
+เรียนรู้การสร้างเว็บไซต์ Landing Page, Portfolio,
+Business Website และระบบออนไลน์ด้วย AI
+โดยไม่จำเป็นต้องมีพื้นฐานการเขียนโปรแกรม
+</p>
+
+<div class="flex flex-col sm:flex-row gap-4 mt-8">
+
+<a href="#pricing"
+class="bg-gradient-to-r from-yellow-400 to-orange-500 px-8 py-4 rounded-xl text-lg font-bold text-white hover:scale-105 transition duration-300 shadow-xl text-center">
+สมัครเรียนวันนี้
+</a>
+
+<a href="#course"
+class="border-2 border-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-white hover:text-primary transition duration-300 text-center">
+ดูรายละเอียดคอร์ส
+</a>
+
+</div>
+</div>
+
+<div class="flex justify-center">
+<img
+src="https://images.unsplash.com/photo-1516321165247-4aa89a48be28?auto=format&fit=crop&w=900&q=80"
+alt="AI Web Master"
+class="rounded-3xl shadow-2xl hover:scale-105 transition duration-500">
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ================= PAIN POINT ================= -->
+<section class="py-24 bg-gray-50">
+<div class="max-w-6xl mx-auto px-6">
+
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-primary">
+ปัญหาเหล่านี้กำลังทำให้คุณเริ่มต้นไม่ได้?
+</h2>
+</div>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="bg-white p-8 rounded-2xl shadow hover:-translate-y-2 transition">
+<h3 class="font-bold text-xl mb-4">😵 ไม่รู้จะเริ่มตรงไหน</h3>
+<p>มีไอเดียแต่ไม่รู้ขั้นตอนการสร้างเว็บไซต์ที่ถูกต้อง</p>
+</div>
+
+<div class="bg-white p-8 rounded-2xl shadow hover:-translate-y-2 transition">
+<h3 class="font-bold text-xl mb-4">💻 เขียนโค้ดไม่เป็น</h3>
+<p>กลัวเรื่อง Programming และคิดว่ายากเกินไป</p>
+</div>
+
+<div class="bg-white p-8 rounded-2xl shadow hover:-translate-y-2 transition">
+<h3 class="font-bold text-xl mb-4">💸 จ้างทำเว็บราคาแพง</h3>
+<p>ต้องเสียเงินหลักหมื่นถึงหลักแสนในการสร้างเว็บไซต์</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- ================= COURSE CONTENT ================= -->
+<section id="course" class="py-24">
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-primary">
+เนื้อหาคอร์ส 35 บทเรียน
+</h2>
+<p class="mt-4 text-lg text-gray-600">
+แบ่งออกเป็น 8 Parts เรียนง่าย ทำตามได้จริง
+</p>
+</div>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+<div class="bg-white border p-6 rounded-2xl hover:shadow-xl transition">
+<h3 class="font-bold text-primary">Part 1</h3>
+<p>รู้จัก AI สำหรับสร้างเว็บไซต์</p>
+</div>
+
+<div class="bg-white border p-6 rounded-2xl hover:shadow-xl transition">
+<h3 class="font-bold text-primary">Part 2</h3>
+<p>วางโครงสร้าง Landing Page</p>
+</div>
+
+<div class="bg-white border p-6 rounded-2xl hover:shadow-xl transition">
+<h3 class="font-bold text-primary">Part 3</h3>
+<p>สร้างเว็บไซต์ด้วย AI</p>
+</div>
+
+<div class="bg-white border p-6 rounded-2xl hover:shadow-xl transition">
+<h3 class="font-bold text-primary">Part 4</h3>
+<p>Tailwind CSS สำหรับมือใหม่</p>
+</div>
+
+<div class="bg-white border p-6 rounded-2xl hover:shadow-xl transition">
+<h3 class="font-bold text-primary">Part 5</h3>
+<p>สร้างหน้า Sales Page</p>
+</div>
+
+<div class="bg-white border p-6 rounded-2xl hover:shadow-xl transition">
+<h3 class="font-bold text-primary">Part 6</h3>
+<p>Responsive Design</p>
+</div>
+
+<div class="bg-white border p-6 rounded-2xl hover:shadow-xl transition">
+<h3 class="font-bold text-primary">Part 7</h3>
+<p>Deploy ขึ้น Hosting</p>
+</div>
+
+<div class="bg-white border p-6 rounded-2xl hover:shadow-xl transition">
+<h3 class="font-bold text-primary">Part 8</h3>
+<p>สร้างรายได้จากงานเว็บ</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- ================= SOCIAL PROOF ================= -->
+<section id="review" class="py-24 bg-primary text-white">
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="text-center mb-12">
+<h2 class="text-4xl font-bold">ผลลัพธ์จากผู้เรียนจริง</h2>
+</div>
+
+<div class="grid md:grid-cols-2 gap-8 mb-12">
+
+<div class="text-center">
+<h3 class="text-5xl font-extrabold text-yellow-400">500+</h3>
+<p>ผู้เรียนแล้ว</p>
+</div>
+
+<div class="text-center">
+<h3 class="text-5xl font-extrabold text-yellow-400">4.9/5</h3>
+<p>คะแนนความพึงพอใจ</p>
+</div>
+
+</div>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="bg-white text-gray-800 p-6 rounded-2xl">
+<p>"จากไม่เคยทำเว็บเลย ตอนนี้รับงานได้แล้ว"</p>
+<h4 class="font-bold mt-4">คุณสมชาย</h4>
+</div>
+
+<div class="bg-white text-gray-800 p-6 rounded-2xl">
+<p>"AI ช่วยลดเวลาทำเว็บได้มหาศาล"</p>
+<h4 class="font-bold mt-4">คุณนภัส</h4>
+</div>
+
+<div class="bg-white text-gray-800 p-6 rounded-2xl">
+<p>"คอร์สเข้าใจง่าย เหมาะสำหรับมือใหม่มาก"</p>
+<h4 class="font-bold mt-4">คุณกิตติ</h4>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section id="pricing" class="py-24">
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-primary">
+เลือกแพ็กเกจที่เหมาะกับคุณ
+</h2>
+</div>
+
+<div class="grid lg:grid-cols-3 gap-8">
+
+<div class="border rounded-3xl p-8 text-center">
+<h3 class="text-2xl font-bold">Basic</h3>
+<div class="text-5xl font-bold mt-4">990</div>
+<p class="mt-3">เรียนพื้นฐาน</p>
+</div>
+
+<div class="border-4 border-gold rounded-3xl p-8 text-center shadow-2xl scale-105 bg-yellow-50">
+<span class="bg-gold text-white px-4 py-2 rounded-full">
+🔥 แนะนำ
+</span>
+<h3 class="text-2xl font-bold mt-4">Pro</h3>
+<div class="text-5xl font-bold mt-4 text-primary">1,990</div>
+<p class="mt-3">ครบทุกบทเรียน 35 บท</p>
+
+<a href="#"
+class="block mt-6 bg-gradient-to-r from-primary to-gold text-white py-4 rounded-xl font-bold hover:scale-105 transition">
+สมัคร Pro
+</a>
+</div>
+
+<div class="border rounded-3xl p-8 text-center">
+<h3 class="text-2xl font-bold">VIP</h3>
+<div class="text-5xl font-bold mt-4">4,990</div>
+<p class="mt-3">พร้อมที่ปรึกษาส่วนตัว</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" class="py-24 bg-gray-50">
+<div class="max-w-4xl mx-auto px-6">
+
+<h2 class="text-4xl font-bold text-center text-primary mb-12">
+คำถามที่พบบ่อย
+</h2>
+
+<div class="space-y-4">
+
+<details class="bg-white p-6 rounded-xl shadow">
+<summary class="font-bold cursor-pointer">ต้องมีพื้นฐานเขียนโค้ดไหม?</summary>
+<p class="mt-3">ไม่จำเป็น เหมาะสำหรับผู้เริ่มต้น</p>
+</details>
+
+<details class="bg-white p-6 rounded-xl shadow">
+<summary class="font-bold cursor-pointer">ใช้เวลาเรียนเท่าไร?</summary>
+<p class="mt-3">วันละ 1-2 ชั่วโมง</p>
+</details>
+
+<details class="bg-white p-6 rounded-xl shadow">
+<summary class="font-bold cursor-pointer">เรียนย้อนหลังได้ไหม?</summary>
+<p class="mt-3">ได้ตลอดชีพ</p>
+</details>
+
+<details class="bg-white p-6 rounded-xl shadow">
+<summary class="font-bold cursor-pointer">มีไฟล์ประกอบไหม?</summary>
+<p class="mt-3">มีครบทุกบทเรียน</p>
+</details>
+
+<details class="bg-white p-6 rounded-xl shadow">
+<summary class="font-bold cursor-pointer">มีอัปเดตเนื้อหาไหม?</summary>
+<p class="mt-3">อัปเดตฟรี</p>
+</details>
+
+<details class="bg-white p-6 rounded-xl shadow">
+<summary class="font-bold cursor-pointer">รับประกันความพึงพอใจไหม?</summary>
+<p class="mt-3">มีนโยบายรับประกันภายในเงื่อนไขที่กำหนด</p>
+</details>
+
+</div>
+
+</div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="py-24 bg-gradient-to-r from-primary to-blue-700 text-white text-center">
+<div class="max-w-4xl mx-auto px-6">
+
+<h2 class="text-5xl font-bold">
+พร้อมสร้างเว็บไซต์ด้วย AI แล้วหรือยัง?
+</h2>
+
+<p class="mt-6 text-xl">
+เริ่มต้นเพียง 1,990 บาท และเปลี่ยนไอเดียให้เป็นเว็บไซต์จริง
+</p>
+
+<a href="#pricing"
+class="inline-block mt-8 bg-gradient-to-r from-yellow-400 to-orange-500 px-10 py-5 rounded-xl text-xl font-bold hover:scale-105 transition duration-300 shadow-xl">
+สมัครเรียนตอนนี้
+</a>
+
+</div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-gray-900 text-white py-10">
+<div class="max-w-7xl mx-auto px-6 text-center">
+
+<div class="text-2xl font-bold mb-4">
+AI Web Master
+</div>
+
+<p>LINE ID : @aiwebmaster</p>
+
+<p class="mt-4 text-gray-400">
+© 2026 AI Web Master. All Rights Reserved.
+</p>
+
+</div>
+</footer>
+
+</body>
+</html>
+```
